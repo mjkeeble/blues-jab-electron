@@ -1,6 +1,7 @@
 # blues-prompter-electron
 
 An Electron application with React and TypeScript
+An Electron version of [BluesPrompter](https://github.com/mjkeeble/BluesPrompter)
 
 ## Recommended IDE Setup
 
