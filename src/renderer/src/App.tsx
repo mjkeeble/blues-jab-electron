@@ -1,13 +1,15 @@
-import Versions from './components/Versions'
-import electronLogo from './assets/electron.svg'
+import electronLogo from './assets/electron.svg';
+import NoteList from './components/Notes/Notes';
+import Versions from './components/Versions';
 
 function App(): JSX.Element {
-  const ipcHandle = (): void => window.electron.ipcRenderer.send('ping')
+  const ipcHandle = (): void => window.electron.ipcRenderer.send('ping');
 
   return (
     <>
       <img alt="logo" className="logo" src={electronLogo} />
       <div className="creator">Powered by electron-vite</div>
+      <NoteList />
       <div className="text">
         Build an Electron app with <span className="react">React</span>
         &nbsp;and <span className="ts">TypeScript</span>
@@ -29,7 +31,7 @@ function App(): JSX.Element {
       </div>
       <Versions></Versions>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
