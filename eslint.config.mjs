@@ -25,7 +25,17 @@ export default tseslint.config(
     rules: {
       ...eslintPluginReactHooks.configs.recommended.rules,
       ...eslintPluginReactRefresh.configs.vite.rules,
-      semi: ['error', 'always']
+      semi: ['error', 'always'],
+      'no-unused-vars': [
+        error,
+        {
+          vars: 'all',
+          args: 'after-used',
+          ignoreRestSiblings: true,
+          argsIgnorePattern: '^_'
+        }
+      ],
+      'react/react-in-jsx-scope': 'off'
     }
   },
   eslintConfigPrettier

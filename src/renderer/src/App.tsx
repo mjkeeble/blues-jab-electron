@@ -1,5 +1,4 @@
-import electronLogo from './assets/electron.svg';
-import NoteList from './components/Notes/Notes';
+import NoteList from './components/NoteList/NoteList';
 import Versions from './components/Versions';
 
 function App(): JSX.Element {
@@ -7,8 +6,7 @@ function App(): JSX.Element {
 
   return (
     <>
-      <img alt="logo" className="logo" src={electronLogo} />
-      <div className="creator">Powered by electron-vite</div>
+      
       <NoteList />
       <div className="text">
         Build an Electron app with <span className="react">React</span>
